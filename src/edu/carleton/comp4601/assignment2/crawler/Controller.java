@@ -31,7 +31,6 @@ public class Controller {
 		return controller;
 	}
 
-	// TODO: Move Crawler logic into server call rather than local Java Main
 	public static void main(String[] args) throws Exception {
 		
 		String homePath = System.getProperty("user.home");
