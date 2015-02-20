@@ -3,14 +3,18 @@ package edu.carleton.comp4601.assignment2.crawler;
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.net.URL;
+import java.lang.reflect.Array;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.regex.Pattern;
 
-import org.apache.tika.Tika;
 import org.apache.tika.metadata.Metadata;
 import org.apache.tika.metadata.TikaCoreProperties;
-import org.apache.tika.mime.MediaType;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -29,6 +33,10 @@ public class Crawler extends WebCrawler {
 	private Grapher crawlGraph;
 	private static String[] domains;
 	private long sleepTime;
+	
+	private ConcurrentHashMap<Integer, edu.carleton.comp4601.assignment2.dao.Document> documentMap;
+	private ConcurrentHashMap<Integer, ArrayList<String>> imageAltMap;
+	private ConcurrentHashMap<Integer, Metadata> metadataMap;
 
 	private static final Pattern filters = Pattern.compile(".*(\\.(css|js|mid|mp2|mp3|mp4|wav|avi|mov|mpeg|ram|m4v"
 			+ "|rm|smil|wmv|swf|wma|zip|rar|gz|bmp))$");
@@ -44,6 +52,10 @@ public class Crawler extends WebCrawler {
 		String graphName = "graph";
 		this.crawlGraph = new Grapher(graphName);
 		this.sleepTime = 0;
+		
+		documentMap = new ConcurrentHashMap<Integer, edu.carleton.comp4601.assignment2.dao.Document>();
+		imageAltMap = new ConcurrentHashMap<Integer, ArrayList<String>>();
+		metadataMap = new ConcurrentHashMap<Integer, Metadata>();
 	}
 
 	@Override
@@ -51,7 +63,6 @@ public class Crawler extends WebCrawler {
 		
 		// When crawl is complete 
 		// 1) Save graph we have been working on
-		// 2) Index everything
 		try {
 			String name = this.crawlGraph.getName();
 			byte[] bytes = Marshaller.serializeObject(crawlGraph);
@@ -59,6 +70,17 @@ public class Crawler extends WebCrawler {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+		
+		// TODO:
+		// 2) Save document to DB
+		for (Entry<Integer, edu.carleton.comp4601.assignment2.dao.Document> entry : documentMap.entrySet()) {
+		    int key = entry.getKey();
+		    edu.carleton.comp4601.assignment2.dao.Document value = entry.getValue();
+		    
+		    // DatabaseManager.getInstance().addNewDocument(myDoc);
+		}
+		
+		// 3) Index with Lucene , image alts, metadata, docs
 	}	
 
 	/**
@@ -104,42 +126,12 @@ public class Crawler extends WebCrawler {
 		Date date = new Date();
 		long currentTime = date.getTime();
 
-		String url = page.getWebURL().getURL();
-		int docId = page.getWebURL().getDocid();
-
-		System.out.println("URL: " + url);
-
-		Tika tika = new Tika();
-		MediaType mediaType = null;
-
-		try {
-			mediaType = MediaType.parse(tika.detect(new URL(url)));
-			
-		} catch (IOException e) {
-			System.err.println("Exception while getting mime type: " + e.getLocalizedMessage());
-			
-		}
-
-		//Initial Vertex and Edge
-		String parentUrl = page.getWebURL().getParentUrl();
-		int parentId = page.getWebURL().getParentDocid();
-
-		PageVertex newPage = new PageVertex(docId, url, currentTime);
-		this.crawlGraph.addVertex(newPage);
-
-		if(!parentUrl.isEmpty()) {
-			PageVertex parentPage = new PageVertex(parentId, parentUrl, currentTime);
-			this.crawlGraph.addVertex(parentPage);
-			this.crawlGraph.addEdge(parentPage, newPage);
-			
-		}
-
 		// Content Type
 		if (page.getParseData() instanceof HtmlParseData) {
-			parseHTMLToDocument(page, url, currentTime);
+			parseHTMLToDocument(page, currentTime);
 
-		} else if(page.getParseData() instanceof BinaryParseData && mediaType != null) {
-			parseBinaryToDocument(page, mediaType, url, currentTime);
+		} else if(page.getParseData() instanceof BinaryParseData) {
+			parseBinaryToDocument(page, currentTime);
 
 		}
 		
@@ -147,95 +139,143 @@ public class Crawler extends WebCrawler {
 	}
 
 
-	// TODO: OtherDocument -> Document (what do i store where)?
-	private boolean parseBinaryToDocument(Page page, MediaType mediaType, String url, long currentTime) {
+	private void parseBinaryToDocument(Page page, long currentTime) {
 
 		try {
-			String type = mediaType.getSubtype();
 			InputStream inputStream = new ByteArrayInputStream(page.getContentData());
-			Metadata metadata = null;
-			edu.carleton.comp4601.assignment2.dao.Document doc = null;
-
-			// Not the same kind of document as a page
+			
 			// The metadata should only be used for the lucene document
-			metadata = TikaParsingManager.getInstance().parseUsingAutoDetect(inputStream);
-			//doc = buildMimeDocFromMetadata(metadata, page.getWebURL().getDocid(), url, currentTime);
+			Metadata metadata = TikaParsingManager.getInstance().parseUsingAutoDetect(inputStream);
+			
+			if(metadata != null) {
+				edu.carleton.comp4601.assignment2.dao.Document doc = new edu.carleton.comp4601.assignment2.dao.Document();
+				
+				String name = metadata.get(TikaCoreProperties.TITLE);
+				doc.setId(page.getWebURL().getDocid());
+				doc.setName(name);
+				
+				documentMap.put(doc.getId(), doc);
+				metadataMap.put(doc.getId(), metadata);
+				
+				// Graph the page
+				buildVertexForPage(page, currentTime);
+				
+			} else {
+				System.err.println("Could not parse metadata using auto detect");
+				
+			}
 
 		} catch (Exception e) {
 			System.err.println("Exception while parsing nonHTML: " + e.getLocalizedMessage());
+			
 		}
-
-		return false;
 	}
 
-	// TODO: Cleanup.. Soup stuff is probably needs by image's as well
-	private boolean parseHTMLToDocument(Page page, String url, long currentTime) {
+	private void parseHTMLToDocument(Page page, long currentTime) {
 
 		try {
 			HtmlParseData htmlParseData = (HtmlParseData) page.getParseData();
-			//String text = htmlParseData.getText();
 			String html = htmlParseData.getHtml();
 			int docId = page.getWebURL().getDocid();
-			//List<WebURL> links = htmlParseData.getOutgoingUrls();
 
 			Document doc = Jsoup.parse(html);
-			Elements jsoupLinks = doc.select("a[href]");
-			//Elements allImages = doc.select("img[src~=(?i)\\.(png|jpe?g|gif)]");
+			Elements allImages = doc.select("img[src~=(?i)\\.(png|jpe?g|gif)]");
 			Elements allText = doc.select("p,h1,h2,h3,h4,h5");
 
 			// Store document basic values
-			//Document myDoc = new Document(docId);
 			edu.carleton.comp4601.assignment2.dao.Document myDoc = new edu.carleton.comp4601.assignment2.dao.Document(docId);
 			myDoc.setName(doc.title());
-			//myDoc.setUrl(url);
 			myDoc.setScore(0);
-			//myDoc.setTime(currentTime);
 
-			// Store all tag names
-			for(Element elem : doc.getAllElements()) {
-				String tag = elem.tagName();
-
-				if(!tag.isEmpty())
-					myDoc.addTag(tag);
-			}
-
-			// Store all links
-			for(Element elem : jsoupLinks) {
-				String linkHref = elem.attr("href");
-
-				if(!linkHref.isEmpty())
-					myDoc.addLink(linkHref);
-			}
-
-			/*
-			// Store all image src and alt
-			for(Element elem : allImages) {
-				String imageSrc = elem.attr("src");
-				String imageAlt = elem.attr("alt");
-
-
-				if(!imageSrc.isEmpty())
-					myDoc.addImage(imageSrc);
-
-				if(!imageAlt.isEmpty())
-					myDoc.addImage(imageAlt);
-			}*/
-
+			// TODO: Tags should be keywords not actual DOM tags
+			myDoc.addTag(doc.title());
+			
 			// Store all document text
 			String rawText = "";
 			for(Element elem : allText) {
 				rawText += (" " + elem.text());
+				
 			}
 			myDoc.setText(rawText);
 
-			DatabaseManager.getInstance().addNewDocument(myDoc);
+			// Store all image src and alt
+			ArrayList<String> imagealts = new ArrayList<String>();
+			for(Element elem : allImages) {
+				String imageAlt = elem.attr("alt");
+				
+				if(!imageAlt.isEmpty())
+					imagealts.add(imageAlt);
+				
+			}
+			imageAltMap.put(myDoc.getId(), imagealts);
+			
+			// Add current page vertex
+			PageVertex current = buildVertexForPage(page, currentTime);
+			
+			// Add links to document and add vertices and edges for links
+			List<WebURL> links = htmlParseData.getOutgoingUrls();
+			for(WebURL link : links) {
+				myDoc.addLink(link.getURL());
+				addOutGoingLinkToGraph(link.getURL(), current);
+				
+			}
+			
+			documentMap.put(myDoc.getId(), myDoc);
 
-			return true;
 		} catch (Exception e) {
 			System.err.println("Exception while parsing HTML: " + e.getLocalizedMessage());
-			return false;
+
 		}
 	}
+	
+	/**
+	 * Builds and adds the graph vertex for a given page and returns it.
+	 * 
+	 * @param page
+	 * @param time
+	 * @return
+	 */
+	private PageVertex buildVertexForPage(Page page, long time) {
+		String parentUrl = page.getWebURL().getParentUrl();
+		int parentId = page.getWebURL().getParentDocid();
+		
+		String url = page.getWebURL().getURL();
+		int docId = page.getWebURL().getDocid();
 
+		PageVertex newPage = new PageVertex(docId, url, time);
+		this.crawlGraph.addVertex(newPage);
 
+		if(!parentUrl.isEmpty()) {
+			PageVertex parentPage = new PageVertex(parentId, parentUrl, time);
+			this.crawlGraph.addVertex(parentPage);
+			this.crawlGraph.addEdge(parentPage, newPage);
+			
+		}
+		
+		return newPage;
+	}
+	
+	/**
+	 * Adds a vertex for a given url if it doesn't exist in the graph. Maps
+	 * edges to the vertex and the current pages vertex.
+	 * 
+	 * @param url
+	 * @param currentPage
+	 */
+	private void addOutGoingLinkToGraph(String url, PageVertex currentPage) {
+		PageVertex vertex = this.crawlGraph.findVertex(url);
+		
+		if(vertex != null) {
+			this.crawlGraph.addEdge(currentPage, vertex);
+			
+		} else {
+			Date date = new Date();
+			long currentTime = date.getTime();
+			PageVertex newVertex = new PageVertex(this.crawlGraph.getIdCounter(), url, currentTime);
+			this.crawlGraph.addVertex(newVertex);
+			this.crawlGraph.addEdge(currentPage, newVertex);
+			
+		}
+	}
+	
 }
