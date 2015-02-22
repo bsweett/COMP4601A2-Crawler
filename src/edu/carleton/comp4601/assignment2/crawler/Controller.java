@@ -21,7 +21,7 @@ public class Controller {
 	final static String homePath = System.getProperty("user.home");
 	final static String crawlStorageFolder = "/data/crawl/root";
 	final static String luceneIndexFolder = "/data/lucene/";
-	final static int numberOfThreads = 12;
+	final static int numberOfThreads = 1;
 	final static String[] crawlDomains = new String[] { "http://www.carleton.ca" };
 	//final static String[] crawlDomains = new String[] { "http://sikaman.dyndns.org:8888/courses/4601/resources/", "http://www.carleton.ca", "http://daydreamdev.com" };
 	

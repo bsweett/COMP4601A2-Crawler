@@ -71,6 +71,7 @@ public class Crawler extends WebCrawler {
 	public void onBeforeExit() {
 		try {
 			String name = this.crawlGraph.getName();
+			logger.info("vertices: " + this.crawlGraph.getVertices().mappingCount());
 			byte[] bytes = Marshaller.serializeObject(crawlGraph);
 			DatabaseManager.getInstance().addNewGraph(name, bytes);
 		} catch (IOException e) {
