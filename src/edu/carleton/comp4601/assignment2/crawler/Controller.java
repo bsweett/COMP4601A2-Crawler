@@ -1,7 +1,12 @@
 package edu.carleton.comp4601.assignment2.crawler;
 
-import org.apache.log4j.PropertyConfigurator;
+import java.io.IOException;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import edu.carleton.comp4601.assignment2.index.CrawlIndexer;
+import edu.carleton.comp4601.assignment2.util.FileUtils;
 import edu.uci.ics.crawler4j.crawler.CrawlConfig;
 import edu.uci.ics.crawler4j.crawler.CrawlController;
 import edu.uci.ics.crawler4j.fetcher.PageFetcher;
@@ -10,54 +15,70 @@ import edu.uci.ics.crawler4j.robotstxt.RobotstxtServer;
 
 public class Controller {
 
+	final static Logger logger = LoggerFactory.getLogger(Controller.class);
+	
+	// Options
+	final static String homePath = System.getProperty("user.home");
+	final static String crawlStorageFolder = "/data/crawl/root";
+	final static String luceneIndexFolder = "/data/lucene/";
+	final static int numberOfThreads = 12;
+	final static String[] crawlDomains = new String[] { "http://www.carleton.ca" };
+	//final static String[] crawlDomains = new String[] { "http://sikaman.dyndns.org:8888/courses/4601/resources/", "http://www.carleton.ca", "http://daydreamdev.com" };
+	
+	/**
+	 * 
+	 * @param config
+	 * @param domains
+	 * @return
+	 * @throws Exception
+	 */
 	public static CrawlController initController(CrawlConfig config, String[] domains) throws Exception {
-		/*
-		 * Instantiate the controller for this crawl.
-		 */
+
 		PageFetcher pageFetcher = new PageFetcher(config);
 		RobotstxtConfig robotstxtConfig = new RobotstxtConfig();
 		RobotstxtServer robotstxtServer = new RobotstxtServer(robotstxtConfig, pageFetcher);
 		CrawlController controller = new CrawlController(config, pageFetcher, robotstxtServer);
 
-		/*
-		 * For each crawl, you need to add some seed urls. These are the first
-		 * URLs that are fetched and then the crawler starts following links
-		 * which are found in these pages
-		 */
-		  for (String domain : domains) {
+		 for (String domain : domains) {
 		      controller.addSeed(domain);
 		}
 
 		return controller;
 	}
 
+	/**
+	 * 
+	 * @param args
+	 * @throws Exception
+	 */
 	public static void main(String[] args) throws Exception {
 		
-		String homePath = System.getProperty("user.home");
-		String crawlStorageFolder = "/data/crawl/root";
-		int numberOfCrawlers = 7;
-		String[] crawlDomains = new String[] { "http://sikaman.dyndns.org:8888/courses/4601/resources/", "http://www.carleton.ca", "http://props.social/" };
-
-		PropertyConfigurator.configure("log4j.properties");
+		logger.info("Web Crawler Controller Started");
+		
+		FileUtils.createDirectory(homePath + luceneIndexFolder);
 		
 		CrawlConfig config = new CrawlConfig();
-		config.setCrawlStorageFolder(homePath + crawlStorageFolder);
-		config.setMaxDepthOfCrawling(1);
-		config.setPolitenessDelay(700);
-		
-		/*
-	     * Since images are binary content, we need to set this parameter to
-	     * true to make sure they are included in the crawl.
-	     */
+		config.setCrawlStorageFolder(homePath + crawlStorageFolder);	
+		config.setPolitenessDelay(300);
 		config.setIncludeBinaryContentInCrawling(true);
 		
+		config.setMaxPagesToFetch(100); // TODO: Remove limit for submission
+
 		Crawler.configure(crawlDomains);
+		CrawlController controller = initController(config, crawlDomains);
+		controller.start(Crawler.class, numberOfThreads);
+	
+		logger.info("Done crawling");
+		CrawlIndexer indexer = new CrawlIndexer(homePath + luceneIndexFolder, controller.getCrawlersLocalData());
 		
-		/*
-		 * Start the crawl. This is a blocking operation, meaning that your code
-		 * will reach the line after this only when crawling is finished.
-		 */
-		initController(config, crawlDomains).start(Crawler.class, numberOfCrawlers);
+		try {
+			indexer.rebuildIndexes();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+		logger.info("All Done Goodbye!");
+		System.exit(0);
 	}
 
 }

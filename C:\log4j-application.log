@@ -1,0 +1,377 @@
+2015-02-21 21:07:18 INFO  Controller:59 - Web Crawler Controller Started
+2015-02-21 21:07:19 INFO  CrawlController:156 - Crawler 1 started.
+2015-02-21 21:07:19 INFO  Crawler:66 - Crawl Thread Started...
+2015-02-21 21:07:19 INFO  Crawler:66 - Crawl Thread Started...
+2015-02-21 21:07:19 INFO  CrawlController:156 - Crawler 2 started.
+2015-02-21 21:07:19 INFO  Crawler:66 - Crawl Thread Started...
+2015-02-21 21:07:19 INFO  CrawlController:156 - Crawler 3 started.
+2015-02-21 21:07:19 INFO  CrawlController:156 - Crawler 4 started.
+2015-02-21 21:07:19 INFO  Crawler:66 - Crawl Thread Started...
+2015-02-21 21:07:19 INFO  CrawlController:156 - Crawler 5 started.
+2015-02-21 21:07:19 INFO  Crawler:66 - Crawl Thread Started...
+2015-02-21 21:07:19 INFO  Crawler:66 - Crawl Thread Started...
+2015-02-21 21:07:19 INFO  CrawlController:156 - Crawler 6 started.
+2015-02-21 21:07:19 INFO  CrawlController:156 - Crawler 7 started.
+2015-02-21 21:07:19 INFO  Crawler:66 - Crawl Thread Started...
+2015-02-21 21:07:19 INFO  Crawler:66 - Crawl Thread Started...
+2015-02-21 21:07:19 INFO  CrawlController:156 - Crawler 8 started.
+2015-02-21 21:07:19 INFO  CrawlController:156 - Crawler 9 started.
+2015-02-21 21:07:19 INFO  Crawler:66 - Crawl Thread Started...
+2015-02-21 21:07:19 INFO  Crawler:66 - Crawl Thread Started...
+2015-02-21 21:07:19 INFO  CrawlController:156 - Crawler 10 started.
+2015-02-21 21:07:19 INFO  CrawlController:156 - Crawler 11 started.
+2015-02-21 21:07:19 INFO  Crawler:66 - Crawl Thread Started...
+2015-02-21 21:07:19 INFO  Crawler:66 - Crawl Thread Started...
+2015-02-21 21:07:19 INFO  CrawlController:156 - Crawler 12 started.
+2015-02-21 21:07:21 ERROR WebCrawler:353 - Exception while running the visit method. Message: 'null' at edu.carleton.comp4601.assignment2.crawler.Crawler.buildVertexForPage(Crawler.java:257)
+2015-02-21 21:08:01 INFO  Controller:59 - Web Crawler Controller Started
+2015-02-21 21:08:01 INFO  CrawlController:156 - Crawler 1 started.
+2015-02-21 21:08:01 INFO  Crawler:66 - Crawl Thread Started...
+2015-02-21 21:08:01 INFO  Crawler:66 - Crawl Thread Started...
+2015-02-21 21:08:01 INFO  CrawlController:156 - Crawler 2 started.
+2015-02-21 21:08:01 INFO  CrawlController:156 - Crawler 3 started.
+2015-02-21 21:08:01 INFO  Crawler:66 - Crawl Thread Started...
+2015-02-21 21:08:01 INFO  Crawler:66 - Crawl Thread Started...
+2015-02-21 21:08:01 INFO  CrawlController:156 - Crawler 4 started.
+2015-02-21 21:08:01 INFO  CrawlController:156 - Crawler 5 started.
+2015-02-21 21:08:01 INFO  Crawler:66 - Crawl Thread Started...
+2015-02-21 21:08:01 INFO  Crawler:66 - Crawl Thread Started...
+2015-02-21 21:08:01 INFO  CrawlController:156 - Crawler 6 started.
+2015-02-21 21:08:01 INFO  CrawlController:156 - Crawler 7 started.
+2015-02-21 21:08:01 INFO  Crawler:66 - Crawl Thread Started...
+2015-02-21 21:08:01 INFO  Crawler:66 - Crawl Thread Started...
+2015-02-21 21:08:01 INFO  CrawlController:156 - Crawler 8 started.
+2015-02-21 21:08:01 INFO  CrawlController:156 - Crawler 9 started.
+2015-02-21 21:08:01 INFO  Crawler:66 - Crawl Thread Started...
+2015-02-21 21:08:01 INFO  Crawler:66 - Crawl Thread Started...
+2015-02-21 21:08:01 INFO  CrawlController:156 - Crawler 10 started.
+2015-02-21 21:08:01 INFO  CrawlController:156 - Crawler 11 started.
+2015-02-21 21:08:01 INFO  Crawler:66 - Crawl Thread Started...
+2015-02-21 21:08:01 INFO  CrawlController:156 - Crawler 12 started.
+2015-02-21 21:08:01 INFO  Crawler:66 - Crawl Thread Started...
+2015-02-21 21:08:02 ERROR WebCrawler:353 - Exception while running the visit method. Message: 'null' at edu.carleton.comp4601.assignment2.crawler.Crawler.buildVertexForPage(Crawler.java:257)
+2015-02-21 21:15:59 INFO  Controller:59 - Web Crawler Controller Started
+2015-02-21 21:15:59 INFO  CrawlController:108 - Deleted contents of: /Users/bensweett/data/crawl/root/frontier ( as you have configured resumable crawling to false )
+2015-02-21 21:16:01 INFO  Crawler:65 - Crawl Thread Started...
+2015-02-21 21:16:01 INFO  CrawlController:165 - Crawler 1 started
+2015-02-21 21:16:01 INFO  CrawlController:165 - Crawler 2 started
+2015-02-21 21:16:01 INFO  Crawler:65 - Crawl Thread Started...
+2015-02-21 21:16:01 INFO  Crawler:65 - Crawl Thread Started...
+2015-02-21 21:16:01 INFO  CrawlController:165 - Crawler 3 started
+2015-02-21 21:16:01 INFO  CrawlController:165 - Crawler 4 started
+2015-02-21 21:16:01 INFO  Crawler:65 - Crawl Thread Started...
+2015-02-21 21:16:01 INFO  Crawler:65 - Crawl Thread Started...
+2015-02-21 21:16:01 INFO  CrawlController:165 - Crawler 5 started
+2015-02-21 21:16:01 INFO  CrawlController:165 - Crawler 6 started
+2015-02-21 21:16:01 INFO  Crawler:65 - Crawl Thread Started...
+2015-02-21 21:16:01 INFO  CrawlController:165 - Crawler 7 started
+2015-02-21 21:16:01 INFO  Crawler:65 - Crawl Thread Started...
+2015-02-21 21:16:01 INFO  Crawler:65 - Crawl Thread Started...
+2015-02-21 21:16:01 INFO  CrawlController:165 - Crawler 8 started
+2015-02-21 21:16:01 INFO  CrawlController:165 - Crawler 9 started
+2015-02-21 21:16:01 INFO  Crawler:65 - Crawl Thread Started...
+2015-02-21 21:16:01 INFO  CrawlController:165 - Crawler 10 started
+2015-02-21 21:16:01 INFO  Crawler:65 - Crawl Thread Started...
+2015-02-21 21:16:01 INFO  Crawler:65 - Crawl Thread Started...
+2015-02-21 21:16:01 INFO  CrawlController:165 - Crawler 11 started
+2015-02-21 21:16:01 INFO  CrawlController:165 - Crawler 12 started
+2015-02-21 21:16:01 INFO  Crawler:65 - Crawl Thread Started...
+2015-02-21 21:16:51 INFO  CrawlController:201 - It looks like no thread is working, waiting for 10 seconds to make sure...
+2015-02-21 21:17:01 INFO  CrawlController:217 - No thread is working and no more URLs are in queue waiting for another 10 seconds to make sure...
+2015-02-21 21:17:11 INFO  CrawlController:225 - All of the crawlers are stopped. Finishing the process...
+2015-02-21 21:17:11 INFO  Crawler:81 - Crawl Thread Complete
+2015-02-21 21:17:11 INFO  Crawler:81 - Crawl Thread Complete
+2015-02-21 21:17:11 INFO  Crawler:81 - Crawl Thread Complete
+2015-02-21 21:17:11 INFO  Crawler:81 - Crawl Thread Complete
+2015-02-21 21:17:11 INFO  Crawler:81 - Crawl Thread Complete
+2015-02-21 21:17:11 INFO  Crawler:81 - Crawl Thread Complete
+2015-02-21 21:17:11 INFO  Crawler:81 - Crawl Thread Complete
+2015-02-21 21:17:11 INFO  Crawler:81 - Crawl Thread Complete
+2015-02-21 21:17:11 INFO  Crawler:81 - Crawl Thread Complete
+2015-02-21 21:17:11 INFO  Crawler:81 - Crawl Thread Complete
+2015-02-21 21:17:11 INFO  Crawler:81 - Crawl Thread Complete
+2015-02-21 21:17:11 INFO  Crawler:81 - Crawl Thread Complete
+2015-02-21 21:17:11 INFO  CrawlController:233 - Waiting for 10 seconds before final clean up...
+2015-02-21 21:17:21 INFO  Controller:74 - Done crawling
+2015-02-21 21:17:22 INFO  Controller:83 - All Done Goodbye!
+2015-02-21 21:24:36 INFO  Controller:57 - Web Crawler Controller Started
+2015-02-21 21:24:37 INFO  CrawlController:108 - Deleted contents of: /Users/bensweett/data/crawl/root/frontier ( as you have configured resumable crawling to false )
+2015-02-21 21:24:39 INFO  CrawlController:165 - Crawler 1 started
+2015-02-21 21:24:39 INFO  CrawlController:165 - Crawler 2 started
+2015-02-21 21:24:39 INFO  CrawlController:165 - Crawler 3 started
+2015-02-21 21:24:39 INFO  CrawlController:165 - Crawler 4 started
+2015-02-21 21:24:39 INFO  CrawlController:165 - Crawler 5 started
+2015-02-21 21:24:39 INFO  CrawlController:165 - Crawler 6 started
+2015-02-21 21:24:39 INFO  CrawlController:165 - Crawler 7 started
+2015-02-21 21:24:39 INFO  CrawlController:165 - Crawler 8 started
+2015-02-21 21:24:39 INFO  CrawlController:165 - Crawler 9 started
+2015-02-21 21:24:39 INFO  CrawlController:165 - Crawler 10 started
+2015-02-21 21:24:39 INFO  CrawlController:165 - Crawler 11 started
+2015-02-21 21:24:39 INFO  CrawlController:165 - Crawler 12 started
+2015-02-21 21:25:29 INFO  CrawlController:201 - It looks like no thread is working, waiting for 10 seconds to make sure...
+2015-02-21 21:25:39 INFO  CrawlController:217 - No thread is working and no more URLs are in queue waiting for another 10 seconds to make sure...
+2015-02-21 21:25:49 INFO  CrawlController:225 - All of the crawlers are stopped. Finishing the process...
+2015-02-21 21:25:49 INFO  Crawler:79 - Crawl Thread Complete
+2015-02-21 21:25:49 INFO  Crawler:79 - Crawl Thread Complete
+2015-02-21 21:25:49 INFO  Crawler:79 - Crawl Thread Complete
+2015-02-21 21:25:49 INFO  Crawler:79 - Crawl Thread Complete
+2015-02-21 21:25:49 INFO  Crawler:79 - Crawl Thread Complete
+2015-02-21 21:25:49 INFO  Crawler:79 - Crawl Thread Complete
+2015-02-21 21:25:49 INFO  Crawler:79 - Crawl Thread Complete
+2015-02-21 21:25:49 INFO  Crawler:79 - Crawl Thread Complete
+2015-02-21 21:25:49 INFO  Crawler:79 - Crawl Thread Complete
+2015-02-21 21:25:49 INFO  Crawler:79 - Crawl Thread Complete
+2015-02-21 21:25:49 INFO  Crawler:79 - Crawl Thread Complete
+2015-02-21 21:25:49 INFO  Crawler:79 - Crawl Thread Complete
+2015-02-21 21:25:49 INFO  CrawlController:233 - Waiting for 10 seconds before final clean up...
+2015-02-21 21:25:59 INFO  Controller:72 - Done crawling
+2015-02-21 21:25:59 INFO  Controller:81 - All Done Goodbye!
+2015-02-21 21:27:11 INFO  Controller:58 - Web Crawler Controller Started
+2015-02-21 21:27:11 INFO  CrawlController:108 - Deleted contents of: /Users/bensweett/data/crawl/root/frontier ( as you have configured resumable crawling to false )
+2015-02-21 21:27:13 INFO  CrawlController:165 - Crawler 1 started
+2015-02-21 21:27:13 INFO  CrawlController:165 - Crawler 2 started
+2015-02-21 21:27:13 INFO  CrawlController:165 - Crawler 3 started
+2015-02-21 21:27:13 INFO  CrawlController:165 - Crawler 4 started
+2015-02-21 21:27:13 INFO  CrawlController:165 - Crawler 5 started
+2015-02-21 21:27:13 INFO  CrawlController:165 - Crawler 6 started
+2015-02-21 21:27:13 INFO  CrawlController:165 - Crawler 7 started
+2015-02-21 21:27:13 INFO  CrawlController:165 - Crawler 8 started
+2015-02-21 21:27:13 INFO  CrawlController:165 - Crawler 9 started
+2015-02-21 21:27:13 INFO  CrawlController:165 - Crawler 10 started
+2015-02-21 21:27:13 INFO  CrawlController:165 - Crawler 11 started
+2015-02-21 21:27:13 INFO  CrawlController:165 - Crawler 12 started
+2015-02-21 21:33:35 INFO  Controller:58 - Web Crawler Controller Started
+2015-02-21 21:33:36 INFO  CrawlController:108 - Deleted contents of: /Users/bensweett/data/crawl/root/frontier ( as you have configured resumable crawling to false )
+2015-02-21 21:33:38 INFO  CrawlController:165 - Crawler 1 started
+2015-02-21 21:33:38 INFO  CrawlController:165 - Crawler 2 started
+2015-02-21 21:33:38 INFO  CrawlController:165 - Crawler 3 started
+2015-02-21 21:33:38 INFO  CrawlController:165 - Crawler 4 started
+2015-02-21 21:33:38 INFO  CrawlController:165 - Crawler 5 started
+2015-02-21 21:33:38 INFO  CrawlController:165 - Crawler 6 started
+2015-02-21 21:33:38 INFO  CrawlController:165 - Crawler 7 started
+2015-02-21 21:33:38 INFO  CrawlController:165 - Crawler 8 started
+2015-02-21 21:33:38 INFO  CrawlController:165 - Crawler 9 started
+2015-02-21 21:33:38 INFO  CrawlController:165 - Crawler 10 started
+2015-02-21 21:33:38 INFO  CrawlController:165 - Crawler 11 started
+2015-02-21 21:33:38 INFO  CrawlController:165 - Crawler 12 started
+2015-02-21 21:36:03 INFO  Controller:56 - Web Crawler Controller Started
+2015-02-21 21:36:03 INFO  CrawlController:108 - Deleted contents of: /Users/bensweett/data/crawl/root/frontier ( as you have configured resumable crawling to false )
+2015-02-21 21:36:05 INFO  CrawlController:165 - Crawler 1 started
+2015-02-21 21:36:05 INFO  CrawlController:165 - Crawler 2 started
+2015-02-21 21:36:05 INFO  CrawlController:165 - Crawler 3 started
+2015-02-21 21:36:05 INFO  CrawlController:165 - Crawler 4 started
+2015-02-21 21:36:05 INFO  CrawlController:165 - Crawler 5 started
+2015-02-21 21:36:05 INFO  CrawlController:165 - Crawler 6 started
+2015-02-21 21:36:05 INFO  CrawlController:165 - Crawler 7 started
+2015-02-21 21:36:05 INFO  CrawlController:165 - Crawler 8 started
+2015-02-21 21:36:05 INFO  CrawlController:165 - Crawler 9 started
+2015-02-21 21:36:05 INFO  CrawlController:165 - Crawler 10 started
+2015-02-21 21:36:05 INFO  CrawlController:165 - Crawler 11 started
+2015-02-21 21:36:05 INFO  CrawlController:165 - Crawler 12 started
+2015-02-21 21:36:45 INFO  CrawlController:201 - It looks like no thread is working, waiting for 10 seconds to make sure...
+2015-02-21 21:36:52 INFO  Controller:58 - Web Crawler Controller Started
+2015-02-21 21:36:52 INFO  CrawlController:108 - Deleted contents of: /Users/bensweett/data/crawl/root/frontier ( as you have configured resumable crawling to false )
+2015-02-21 21:36:54 INFO  CrawlController:165 - Crawler 1 started
+2015-02-21 21:36:54 INFO  CrawlController:165 - Crawler 2 started
+2015-02-21 21:36:54 INFO  CrawlController:165 - Crawler 3 started
+2015-02-21 21:36:54 INFO  CrawlController:165 - Crawler 4 started
+2015-02-21 21:36:54 INFO  CrawlController:165 - Crawler 5 started
+2015-02-21 21:36:54 INFO  CrawlController:165 - Crawler 6 started
+2015-02-21 21:36:54 INFO  CrawlController:165 - Crawler 7 started
+2015-02-21 21:36:54 INFO  CrawlController:165 - Crawler 8 started
+2015-02-21 21:36:54 INFO  CrawlController:165 - Crawler 9 started
+2015-02-21 21:36:54 INFO  CrawlController:165 - Crawler 10 started
+2015-02-21 21:36:54 INFO  CrawlController:165 - Crawler 11 started
+2015-02-21 21:36:54 INFO  CrawlController:165 - Crawler 12 started
+2015-02-21 21:37:34 INFO  CrawlController:201 - It looks like no thread is working, waiting for 10 seconds to make sure...
+2015-02-21 21:38:56 INFO  Controller:56 - Web Crawler Controller Started
+2015-02-21 21:38:56 INFO  CrawlController:108 - Deleted contents of: /Users/bensweett/data/crawl/root/frontier ( as you have configured resumable crawling to false )
+2015-02-21 21:38:58 INFO  CrawlController:165 - Crawler 1 started
+2015-02-21 21:38:58 INFO  CrawlController:165 - Crawler 2 started
+2015-02-21 21:38:58 INFO  CrawlController:165 - Crawler 3 started
+2015-02-21 21:38:58 INFO  CrawlController:165 - Crawler 4 started
+2015-02-21 21:38:58 INFO  CrawlController:165 - Crawler 5 started
+2015-02-21 21:38:58 INFO  CrawlController:165 - Crawler 6 started
+2015-02-21 21:38:58 INFO  CrawlController:165 - Crawler 7 started
+2015-02-21 21:38:58 INFO  CrawlController:165 - Crawler 8 started
+2015-02-21 21:38:58 INFO  CrawlController:165 - Crawler 9 started
+2015-02-21 21:38:58 INFO  CrawlController:165 - Crawler 10 started
+2015-02-21 21:38:58 INFO  CrawlController:165 - Crawler 11 started
+2015-02-21 21:38:58 INFO  CrawlController:165 - Crawler 12 started
+2015-02-21 21:40:23 INFO  Controller:56 - Web Crawler Controller Started
+2015-02-21 21:40:23 INFO  CrawlController:108 - Deleted contents of: /Users/bensweett/data/crawl/root/frontier ( as you have configured resumable crawling to false )
+2015-02-21 21:40:25 INFO  CrawlController:165 - Crawler 1 started
+2015-02-21 21:40:25 INFO  CrawlController:165 - Crawler 2 started
+2015-02-21 21:40:25 INFO  CrawlController:165 - Crawler 3 started
+2015-02-21 21:40:25 INFO  CrawlController:165 - Crawler 4 started
+2015-02-21 21:40:25 INFO  CrawlController:165 - Crawler 5 started
+2015-02-21 21:40:25 INFO  CrawlController:165 - Crawler 6 started
+2015-02-21 21:40:25 INFO  CrawlController:165 - Crawler 7 started
+2015-02-21 21:40:25 INFO  CrawlController:165 - Crawler 8 started
+2015-02-21 21:40:25 INFO  CrawlController:165 - Crawler 9 started
+2015-02-21 21:40:25 INFO  CrawlController:165 - Crawler 10 started
+2015-02-21 21:40:25 INFO  CrawlController:165 - Crawler 11 started
+2015-02-21 21:40:25 INFO  CrawlController:165 - Crawler 12 started
+2015-02-21 21:41:05 INFO  CrawlController:201 - It looks like no thread is working, waiting for 10 seconds to make sure...
+2015-02-21 21:41:15 INFO  CrawlController:217 - No thread is working and no more URLs are in queue waiting for another 10 seconds to make sure...
+2015-02-21 21:41:25 INFO  CrawlController:225 - All of the crawlers are stopped. Finishing the process...
+2015-02-21 21:41:25 INFO  Crawler:80 - Crawl Thread Complete
+2015-02-21 21:41:25 INFO  Crawler:80 - Crawl Thread Complete
+2015-02-21 21:41:25 INFO  Crawler:80 - Crawl Thread Complete
+2015-02-21 21:41:25 INFO  Crawler:80 - Crawl Thread Complete
+2015-02-21 21:41:25 INFO  Crawler:80 - Crawl Thread Complete
+2015-02-21 21:41:25 INFO  Crawler:80 - Crawl Thread Complete
+2015-02-21 21:41:25 INFO  Crawler:80 - Crawl Thread Complete
+2015-02-21 21:41:25 INFO  Crawler:80 - Crawl Thread Complete
+2015-02-21 21:41:25 INFO  Crawler:80 - Crawl Thread Complete
+2015-02-21 21:41:25 INFO  Crawler:80 - Crawl Thread Complete
+2015-02-21 21:41:25 INFO  Crawler:80 - Crawl Thread Complete
+2015-02-21 21:41:25 INFO  Crawler:80 - Crawl Thread Complete
+2015-02-21 21:41:25 INFO  CrawlController:233 - Waiting for 10 seconds before final clean up...
+2015-02-21 21:41:35 INFO  Controller:71 - Done crawling
+2015-02-21 21:41:36 INFO  Controller:80 - All Done Goodbye!
+2015-02-21 21:50:07 INFO  Controller:56 - Web Crawler Controller Started
+2015-02-21 21:50:07 INFO  CrawlController:108 - Deleted contents of: /Users/bensweett/data/crawl/root/frontier ( as you have configured resumable crawling to false )
+2015-02-21 21:50:09 INFO  CrawlController:165 - Crawler 1 started
+2015-02-21 21:50:09 INFO  CrawlController:165 - Crawler 2 started
+2015-02-21 21:50:09 INFO  CrawlController:165 - Crawler 3 started
+2015-02-21 21:50:09 INFO  CrawlController:165 - Crawler 4 started
+2015-02-21 21:50:09 INFO  CrawlController:165 - Crawler 5 started
+2015-02-21 21:50:09 INFO  CrawlController:165 - Crawler 6 started
+2015-02-21 21:50:09 INFO  CrawlController:165 - Crawler 7 started
+2015-02-21 21:50:09 INFO  CrawlController:165 - Crawler 8 started
+2015-02-21 21:50:09 INFO  CrawlController:165 - Crawler 9 started
+2015-02-21 21:50:09 INFO  CrawlController:165 - Crawler 10 started
+2015-02-21 21:50:09 INFO  CrawlController:165 - Crawler 11 started
+2015-02-21 21:50:09 INFO  CrawlController:165 - Crawler 12 started
+2015-02-21 21:50:49 INFO  CrawlController:201 - It looks like no thread is working, waiting for 10 seconds to make sure...
+2015-02-21 21:50:59 INFO  CrawlController:217 - No thread is working and no more URLs are in queue waiting for another 10 seconds to make sure...
+2015-02-21 21:51:09 INFO  CrawlController:225 - All of the crawlers are stopped. Finishing the process...
+2015-02-21 21:51:09 INFO  Crawler:80 - Crawl Thread Complete
+2015-02-21 21:51:09 INFO  Crawler:80 - Crawl Thread Complete
+2015-02-21 21:51:09 INFO  Crawler:80 - Crawl Thread Complete
+2015-02-21 21:51:09 INFO  Crawler:80 - Crawl Thread Complete
+2015-02-21 21:51:09 INFO  Crawler:80 - Crawl Thread Complete
+2015-02-21 21:51:09 INFO  Crawler:80 - Crawl Thread Complete
+2015-02-21 21:51:09 INFO  Crawler:80 - Crawl Thread Complete
+2015-02-21 21:51:09 INFO  Crawler:80 - Crawl Thread Complete
+2015-02-21 21:51:09 INFO  Crawler:80 - Crawl Thread Complete
+2015-02-21 21:51:09 INFO  Crawler:80 - Crawl Thread Complete
+2015-02-21 21:51:09 INFO  Crawler:80 - Crawl Thread Complete
+2015-02-21 21:51:09 INFO  Crawler:80 - Crawl Thread Complete
+2015-02-21 21:51:09 INFO  CrawlController:233 - Waiting for 10 seconds before final clean up...
+2015-02-21 21:51:19 INFO  Controller:71 - Done crawling
+2015-02-21 21:51:19 INFO  CrawlIndexer:51 - Pooling crawler data
+2015-02-21 21:52:27 INFO  Controller:56 - Web Crawler Controller Started
+2015-02-21 21:52:27 INFO  CrawlController:108 - Deleted contents of: /Users/bensweett/data/crawl/root/frontier ( as you have configured resumable crawling to false )
+2015-02-21 21:52:29 INFO  CrawlController:165 - Crawler 1 started
+2015-02-21 21:52:29 INFO  CrawlController:165 - Crawler 2 started
+2015-02-21 21:52:29 INFO  CrawlController:165 - Crawler 3 started
+2015-02-21 21:52:29 INFO  CrawlController:165 - Crawler 4 started
+2015-02-21 21:52:29 INFO  CrawlController:165 - Crawler 5 started
+2015-02-21 21:52:29 INFO  CrawlController:165 - Crawler 6 started
+2015-02-21 21:52:29 INFO  CrawlController:165 - Crawler 7 started
+2015-02-21 21:52:29 INFO  CrawlController:165 - Crawler 8 started
+2015-02-21 21:52:29 INFO  CrawlController:165 - Crawler 9 started
+2015-02-21 21:52:29 INFO  CrawlController:165 - Crawler 10 started
+2015-02-21 21:52:29 INFO  CrawlController:165 - Crawler 11 started
+2015-02-21 21:52:29 INFO  CrawlController:165 - Crawler 12 started
+2015-02-21 21:53:09 INFO  CrawlController:201 - It looks like no thread is working, waiting for 10 seconds to make sure...
+2015-02-21 21:53:19 INFO  CrawlController:217 - No thread is working and no more URLs are in queue waiting for another 10 seconds to make sure...
+2015-02-21 21:53:29 INFO  CrawlController:225 - All of the crawlers are stopped. Finishing the process...
+2015-02-21 21:53:29 INFO  Crawler:80 - Crawl Thread Complete
+2015-02-21 21:53:29 INFO  Crawler:80 - Crawl Thread Complete
+2015-02-21 21:53:29 INFO  Crawler:80 - Crawl Thread Complete
+2015-02-21 21:53:29 INFO  Crawler:80 - Crawl Thread Complete
+2015-02-21 21:53:29 INFO  Crawler:80 - Crawl Thread Complete
+2015-02-21 21:53:29 INFO  Crawler:80 - Crawl Thread Complete
+2015-02-21 21:53:30 INFO  Crawler:80 - Crawl Thread Complete
+2015-02-21 21:53:30 INFO  Crawler:80 - Crawl Thread Complete
+2015-02-21 21:53:30 INFO  Crawler:80 - Crawl Thread Complete
+2015-02-21 21:53:30 INFO  Crawler:80 - Crawl Thread Complete
+2015-02-21 21:53:30 INFO  Crawler:80 - Crawl Thread Complete
+2015-02-21 21:53:30 INFO  Crawler:80 - Crawl Thread Complete
+2015-02-21 21:53:30 INFO  CrawlController:233 - Waiting for 10 seconds before final clean up...
+2015-02-21 21:53:40 INFO  Controller:71 - Done crawling
+2015-02-21 21:53:40 INFO  CrawlIndexer:54 - Pooling crawler data
+2015-02-21 21:53:40 INFO  CrawlIndexer:181 - Total Documents with Image Alts: 65
+2015-02-21 21:53:40 INFO  CrawlIndexer:182 - Total Documents with Metadata: 11
+2015-02-21 21:53:40 INFO  CrawlIndexer:183 - Indexing Documents with Alts and Metadata ...
+2015-02-21 21:53:40 INFO  CrawlIndexer:103 - Indexing Document: 0
+2015-02-21 21:53:40 INFO  CrawlIndexer:103 - Indexing Document: 1
+2015-02-21 21:53:40 INFO  CrawlIndexer:103 - Indexing Document: 2
+2015-02-21 21:53:40 INFO  CrawlIndexer:103 - Indexing Document: 3
+2015-02-21 21:53:40 INFO  CrawlIndexer:103 - Indexing Document: 4
+2015-02-21 21:53:40 INFO  CrawlIndexer:103 - Indexing Document: 5
+2015-02-21 21:53:40 INFO  CrawlIndexer:103 - Indexing Document: 6
+2015-02-21 21:53:40 INFO  CrawlIndexer:103 - Indexing Document: 7
+2015-02-21 21:53:40 INFO  CrawlIndexer:103 - Indexing Document: 8
+2015-02-21 21:53:40 INFO  CrawlIndexer:103 - Indexing Document: 9
+2015-02-21 21:53:40 INFO  CrawlIndexer:103 - Indexing Document: 10
+2015-02-21 21:53:40 INFO  CrawlIndexer:103 - Indexing Document: 11
+2015-02-21 21:53:40 INFO  CrawlIndexer:103 - Indexing Document: 12
+2015-02-21 21:53:40 INFO  CrawlIndexer:103 - Indexing Document: 13
+2015-02-21 21:53:40 INFO  CrawlIndexer:103 - Indexing Document: 14
+2015-02-21 21:53:40 INFO  CrawlIndexer:103 - Indexing Document: 15
+2015-02-21 21:53:40 INFO  CrawlIndexer:103 - Indexing Document: 16
+2015-02-21 21:53:40 INFO  CrawlIndexer:103 - Indexing Document: 17
+2015-02-21 21:53:40 INFO  CrawlIndexer:103 - Indexing Document: 18
+2015-02-21 21:53:40 INFO  CrawlIndexer:103 - Indexing Document: 19
+2015-02-21 21:53:40 INFO  CrawlIndexer:103 - Indexing Document: 20
+2015-02-21 21:53:40 INFO  CrawlIndexer:103 - Indexing Document: 21
+2015-02-21 21:53:40 INFO  CrawlIndexer:103 - Indexing Document: 22
+2015-02-21 21:53:40 INFO  CrawlIndexer:103 - Indexing Document: 23
+2015-02-21 21:53:40 INFO  CrawlIndexer:103 - Indexing Document: 24
+2015-02-21 21:53:40 INFO  CrawlIndexer:103 - Indexing Document: 25
+2015-02-21 21:53:40 INFO  CrawlIndexer:103 - Indexing Document: 26
+2015-02-21 21:53:40 INFO  CrawlIndexer:103 - Indexing Document: 27
+2015-02-21 21:53:40 INFO  CrawlIndexer:103 - Indexing Document: 28
+2015-02-21 21:53:40 INFO  CrawlIndexer:103 - Indexing Document: 29
+2015-02-21 21:53:40 INFO  CrawlIndexer:103 - Indexing Document: 30
+2015-02-21 21:53:40 INFO  CrawlIndexer:103 - Indexing Document: 31
+2015-02-21 21:53:40 INFO  CrawlIndexer:103 - Indexing Document: 32
+2015-02-21 21:53:40 INFO  CrawlIndexer:103 - Indexing Document: 33
+2015-02-21 21:53:40 INFO  CrawlIndexer:103 - Indexing Document: 34
+2015-02-21 21:53:40 INFO  CrawlIndexer:103 - Indexing Document: 35
+2015-02-21 21:53:40 INFO  CrawlIndexer:103 - Indexing Document: 36
+2015-02-21 21:53:40 INFO  CrawlIndexer:103 - Indexing Document: 37
+2015-02-21 21:53:40 INFO  CrawlIndexer:103 - Indexing Document: 38
+2015-02-21 21:53:40 INFO  CrawlIndexer:103 - Indexing Document: 39
+2015-02-21 21:53:40 INFO  CrawlIndexer:103 - Indexing Document: 40
+2015-02-21 21:53:40 INFO  CrawlIndexer:103 - Indexing Document: 41
+2015-02-21 21:53:40 INFO  CrawlIndexer:103 - Indexing Document: 42
+2015-02-21 21:53:40 INFO  CrawlIndexer:103 - Indexing Document: 43
+2015-02-21 21:53:40 INFO  CrawlIndexer:103 - Indexing Document: 44
+2015-02-21 21:53:40 INFO  CrawlIndexer:103 - Indexing Document: 45
+2015-02-21 21:53:40 INFO  CrawlIndexer:103 - Indexing Document: 46
+2015-02-21 21:53:40 INFO  CrawlIndexer:103 - Indexing Document: 47
+2015-02-21 21:53:40 INFO  CrawlIndexer:103 - Indexing Document: 48
+2015-02-21 21:53:40 INFO  CrawlIndexer:103 - Indexing Document: 49
+2015-02-21 21:53:40 INFO  CrawlIndexer:103 - Indexing Document: 50
+2015-02-21 21:53:40 INFO  CrawlIndexer:103 - Indexing Document: 51
+2015-02-21 21:53:40 INFO  CrawlIndexer:103 - Indexing Document: 52
+2015-02-21 21:53:40 INFO  CrawlIndexer:103 - Indexing Document: 53
+2015-02-21 21:53:40 INFO  CrawlIndexer:103 - Indexing Document: 54
+2015-02-21 21:53:40 INFO  CrawlIndexer:103 - Indexing Document: 55
+2015-02-21 21:53:40 INFO  CrawlIndexer:103 - Indexing Document: 56
+2015-02-21 21:53:40 INFO  CrawlIndexer:103 - Indexing Document: 57
+2015-02-21 21:53:40 INFO  CrawlIndexer:103 - Indexing Document: 58
+2015-02-21 21:53:40 INFO  CrawlIndexer:103 - Indexing Document: 59
+2015-02-21 21:53:40 INFO  CrawlIndexer:103 - Indexing Document: 60
+2015-02-21 21:53:40 INFO  CrawlIndexer:103 - Indexing Document: 61
+2015-02-21 21:53:40 INFO  CrawlIndexer:103 - Indexing Document: 62
+2015-02-21 21:53:40 INFO  CrawlIndexer:103 - Indexing Document: 63
+2015-02-21 21:53:40 INFO  CrawlIndexer:103 - Indexing Document: 64
+2015-02-21 21:53:40 INFO  CrawlIndexer:103 - Indexing Document: 65
+2015-02-21 21:53:40 INFO  CrawlIndexer:103 - Indexing Document: 66
+2015-02-21 21:53:40 INFO  CrawlIndexer:103 - Indexing Document: 67
+2015-02-21 21:53:40 INFO  CrawlIndexer:103 - Indexing Document: 68
+2015-02-21 21:53:40 INFO  CrawlIndexer:103 - Indexing Document: 69
+2015-02-21 21:53:40 INFO  CrawlIndexer:103 - Indexing Document: 70
+2015-02-21 21:53:40 INFO  CrawlIndexer:103 - Indexing Document: 71
+2015-02-21 21:53:40 INFO  CrawlIndexer:103 - Indexing Document: 72
+2015-02-21 21:53:40 INFO  CrawlIndexer:103 - Indexing Document: 73
+2015-02-21 21:53:40 INFO  CrawlIndexer:103 - Indexing Document: 74
+2015-02-21 21:53:40 INFO  CrawlIndexer:103 - Indexing Document: 75
+2015-02-21 21:53:40 INFO  CrawlIndexer:194 - Done ...
+2015-02-21 21:53:40 INFO  Controller:80 - All Done Goodbye!

@@ -12,7 +12,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 @XmlAccessorType (XmlAccessType.FIELD)
 public class Document {
 	private Integer id;
-	private Integer score;
+	private Float score;
 	private String name;
 	private String text;
 	@XmlElement(name = "tags")
@@ -34,7 +34,7 @@ public class Document {
 	public Document(Map<?, ?> map) {
 		this();
 		this.id = (Integer) map.get("id");
-		this.score = (Integer) map.get("score");
+		this.score = (Float) map.get("score");
 		this.name = (String) map.get("name");
 		this.text = (String) map.get("text");
 		this.tags = (ArrayList<String>) map.get("tags");
@@ -45,11 +45,11 @@ public class Document {
 		return id;
 	}
 
-	public void setScore(Integer score) {
+	public void setScore(Float score) {
 		this.score = score;
 	}
 
-	public Integer getScore() {
+	public Float getScore() {
 		return score;
 	}
 

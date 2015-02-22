@@ -53,7 +53,6 @@ public class Grapher implements Serializable {
 	public synchronized PageVertex findVertex(String url) {
 		for (PageVertex vertex : getVertices().values()) {
 		    if(vertex.getUrl().equals(url)) {
-		    	System.out.println("Found vertex:" + url);
 		    	return vertex;
 		    }
 		}

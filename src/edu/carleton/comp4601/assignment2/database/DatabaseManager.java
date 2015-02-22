@@ -2,6 +2,7 @@ package edu.carleton.comp4601.assignment2.database;
 
 import java.net.UnknownHostException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Map;
 
 import com.mongodb.BasicDBObject;
@@ -49,7 +50,7 @@ public class DatabaseManager {
 
 	}
 	
-	public boolean addNewGraph(String name, byte[] graph) {
+	public synchronized boolean addNewGraph(String name, byte[] graph) {
 		try {
 			DBCollection col = db.getCollection(GRAPH);
 			BasicDBObject obj = new BasicDBObject();
@@ -64,7 +65,7 @@ public class DatabaseManager {
 		return true;
 	}
 	
-	public byte[] getGraphData(String name) {
+	public synchronized byte[] getGraphData(String name) {
 
 		try {
 			BasicDBObject query = new BasicDBObject("name", name);
@@ -86,7 +87,7 @@ public class DatabaseManager {
 	}
 
 	// Adds a new document to the database
-	public boolean addNewDocument(Document document) {
+	public synchronized boolean addNewDocument(Document document) {
 
 		try {
 			DBCollection col = db.getCollection(DOCUMENTS);
@@ -101,7 +102,7 @@ public class DatabaseManager {
 	}
 
 	// Updates an existing document with a new document in the database
-	public boolean updateDocument(Document newDocument, Document oldDocument) {
+	public synchronized boolean updateDocument(Document newDocument, Document oldDocument) {
 
 		try {
 			DBCollection col = db.getCollection(DOCUMENTS);
@@ -116,7 +117,7 @@ public class DatabaseManager {
 	}
 
 	// Removes an existing document by ID from the database
-	public Document removeDocument(Integer id) {	
+	public synchronized Document removeDocument(Integer id) {	
 
 		try {
 			BasicDBObject query = new BasicDBObject("id", id);
@@ -132,7 +133,7 @@ public class DatabaseManager {
 	}
 
 	// Finds a document by ID in from the database
-	public Document findDocument(Integer id) {
+	public synchronized Document findDocument(Integer id) {
 
 		try {
 
@@ -153,7 +154,7 @@ public class DatabaseManager {
 	}
 
 	// Finds a list of documents by a list of tags from the database
-	public ArrayList<Document> findDocumentsByTag(ArrayList<String> tags) {
+	public synchronized ArrayList<Document> findDocumentsByTag(ArrayList<String> tags) {
 
 		try {
 			ArrayList<Document> documents = new ArrayList<Document>();
@@ -177,7 +178,7 @@ public class DatabaseManager {
 	}
 
 	// Gets a list of all the documents from the database
-	public ArrayList<Document> getDocuments() {
+	public synchronized ArrayList<Document> getDocuments() {
 
 		try {
 			DBCollection col = db.getCollection(DOCUMENTS);
@@ -198,9 +199,33 @@ public class DatabaseManager {
 		}
 
 	}
+	
+	// Gets a list of all the documents from the database
+	public synchronized HashMap<Integer, Document> getDocumentsAsMap() {
+
+		try {
+			DBCollection col = db.getCollection(DOCUMENTS);
+			DBCursor result = col.find();
+
+			if(result != null) {
+				HashMap<Integer, Document>  documents = new HashMap<Integer, Document>();
+				while(result.hasNext()) {
+					Document doc = new Document(result.next().toMap());
+					documents.put(doc.getId(), doc);
+				}
+				return documents;
+			}
+
+			return null;
+		} catch (Exception e) {
+			System.out.println("MongoException: " + e.getLocalizedMessage());
+			return null;
+		}
+
+	}
 
 	// Gets the document collection size
-	public int getDocumentCollectionSize() {
+	public synchronized int getDocumentCollectionSize() {
 		DBCollection col = db.getCollection(DOCUMENTS);
 		return (int) col.getCount();
 	}
