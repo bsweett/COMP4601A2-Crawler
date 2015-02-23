@@ -21,8 +21,13 @@ public class Document {
 	private ArrayList<String> links;
 
 	public Document() {
+		id = 0;
+		name = "";
+		text = "";
+		score = Float.valueOf(0);		
 		tags = new ArrayList<String>();
 		links = new ArrayList<String>();
+
 	}
 
 	public Document(Integer id) {
@@ -34,7 +39,7 @@ public class Document {
 	public Document(Map<?, ?> map) {
 		this();
 		this.id = (Integer) map.get("id");
-		this.score = (Float) map.get("score");
+		this.score = ((Double) map.get("score")).floatValue();
 		this.name = (String) map.get("name");
 		this.text = (String) map.get("text");
 		this.tags = (ArrayList<String>) map.get("tags");

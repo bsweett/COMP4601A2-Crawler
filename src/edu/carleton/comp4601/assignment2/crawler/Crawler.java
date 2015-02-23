@@ -71,7 +71,6 @@ public class Crawler extends WebCrawler {
 	public void onBeforeExit() {
 		try {
 			String name = this.crawlGraph.getName();
-			logger.info("vertices: " + this.crawlGraph.getVertices().mappingCount());
 			byte[] bytes = Marshaller.serializeObject(crawlGraph);
 			DatabaseManager.getInstance().addNewGraph(name, bytes);
 		} catch (IOException e) {
@@ -158,8 +157,12 @@ public class Crawler extends WebCrawler {
 				edu.carleton.comp4601.assignment2.dao.Document doc = new edu.carleton.comp4601.assignment2.dao.Document();
 
 				String name = url.substring(url.lastIndexOf('/') + 1, url.length());
+				
 				doc.setId(page.getWebURL().getDocid());
-				doc.setName(name);
+				
+				if(name != null) {
+					doc.setName(name);
+				}
 
 				data.addVisitedDocument(doc.getId(), doc);
 				data.addVisitedMetadata(doc.getId(), metadata);
@@ -198,10 +201,13 @@ public class Crawler extends WebCrawler {
 
 			// Store document basic values
 			edu.carleton.comp4601.assignment2.dao.Document myDoc = new edu.carleton.comp4601.assignment2.dao.Document(docId);
-			myDoc.setName(doc.title());
+			if(doc.title() != null) {
+				myDoc.setName(doc.title());
+				myDoc.addTag(doc.title());
+			}
 
 			// TODO: Tags should be keywords not actual DOM tags
-			myDoc.addTag(doc.title());
+			
 
 			// Store all document text
 			String rawText = "";
@@ -209,7 +215,10 @@ public class Crawler extends WebCrawler {
 				rawText += (" " + elem.text());
 
 			}
-			myDoc.setText(rawText);
+			
+			if(rawText != null) {
+				myDoc.setText(rawText);
+			}
 
 			// Store all image src and alt
 			ArrayList<String> imagealts = new ArrayList<String>();
@@ -228,7 +237,9 @@ public class Crawler extends WebCrawler {
 			// Add links to document and add vertices and edges for links
 			Set<WebURL> links = htmlParseData.getOutgoingUrls();
 			for(WebURL link : links) {
-				myDoc.addLink(link.getURL());
+				if(link != null) {
+					myDoc.addLink(link.getURL());
+				}
 				addOutGoingLinkToGraph(link.getURL(), current);
 
 			}

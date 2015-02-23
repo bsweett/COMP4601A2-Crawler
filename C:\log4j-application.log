@@ -704,3 +704,286 @@
 2015-02-22 16:50:16 INFO  CrawlIndexer:100 - Indexing Document: 78
 2015-02-22 16:50:16 INFO  CrawlIndexer:191 - Done ...
 2015-02-22 16:50:16 INFO  Controller:80 - All Done Goodbye!
+2015-02-22 17:36:47 INFO  Controller:56 - Web Crawler Controller Started
+2015-02-22 17:36:47 INFO  CrawlController:108 - Deleted contents of: /Users/bensweett/data/crawl/root/frontier ( as you have configured resumable crawling to false )
+2015-02-22 17:36:49 INFO  CrawlController:165 - Crawler 1 started
+2015-02-22 17:37:49 INFO  CrawlController:201 - It looks like no thread is working, waiting for 10 seconds to make sure...
+2015-02-22 17:37:59 INFO  CrawlController:217 - No thread is working and no more URLs are in queue waiting for another 10 seconds to make sure...
+2015-02-22 17:38:09 INFO  CrawlController:225 - All of the crawlers are stopped. Finishing the process...
+2015-02-22 17:38:09 INFO  Crawler:74 - vertices: 1295
+2015-02-22 17:38:10 INFO  Crawler:81 - Crawl Thread Complete
+2015-02-22 17:38:10 INFO  CrawlController:233 - Waiting for 10 seconds before final clean up...
+2015-02-22 17:38:20 INFO  Controller:71 - Done crawling
+2015-02-22 17:38:20 INFO  CrawlIndexer:51 - Pooling crawler data
+2015-02-22 17:38:20 INFO  CrawlIndexer:178 - Total Documents with Image Alts: 68
+2015-02-22 17:38:20 INFO  CrawlIndexer:179 - Total Documents with Metadata: 11
+2015-02-22 17:38:20 INFO  CrawlIndexer:180 - Indexing Documents with Alts and Metadata ...
+2015-02-22 17:38:20 INFO  CrawlIndexer:100 - Indexing Document: 0
+2015-02-22 17:38:20 INFO  CrawlIndexer:100 - Indexing Document: 1
+2015-02-22 17:38:20 INFO  CrawlIndexer:100 - Indexing Document: 2
+2015-02-22 17:38:20 INFO  CrawlIndexer:100 - Indexing Document: 3
+2015-02-22 17:38:20 INFO  CrawlIndexer:100 - Indexing Document: 4
+2015-02-22 17:38:20 INFO  CrawlIndexer:100 - Indexing Document: 5
+2015-02-22 17:38:20 INFO  CrawlIndexer:100 - Indexing Document: 6
+2015-02-22 17:38:20 INFO  CrawlIndexer:100 - Indexing Document: 7
+2015-02-22 17:38:20 INFO  CrawlIndexer:100 - Indexing Document: 8
+2015-02-22 17:38:20 INFO  CrawlIndexer:100 - Indexing Document: 9
+2015-02-22 17:38:20 INFO  CrawlIndexer:100 - Indexing Document: 10
+2015-02-22 17:38:20 INFO  CrawlIndexer:100 - Indexing Document: 11
+2015-02-22 17:38:20 INFO  CrawlIndexer:100 - Indexing Document: 12
+2015-02-22 17:38:20 INFO  CrawlIndexer:100 - Indexing Document: 13
+2015-02-22 17:38:20 INFO  CrawlIndexer:100 - Indexing Document: 14
+2015-02-22 17:38:20 INFO  CrawlIndexer:100 - Indexing Document: 15
+2015-02-22 17:38:20 INFO  CrawlIndexer:100 - Indexing Document: 16
+2015-02-22 17:38:20 INFO  CrawlIndexer:100 - Indexing Document: 17
+2015-02-22 17:38:20 INFO  CrawlIndexer:100 - Indexing Document: 18
+2015-02-22 17:38:20 INFO  CrawlIndexer:100 - Indexing Document: 19
+2015-02-22 17:38:20 INFO  CrawlIndexer:100 - Indexing Document: 20
+2015-02-22 17:38:20 INFO  CrawlIndexer:100 - Indexing Document: 21
+2015-02-22 17:38:20 INFO  CrawlIndexer:100 - Indexing Document: 22
+2015-02-22 17:38:20 INFO  CrawlIndexer:100 - Indexing Document: 23
+2015-02-22 17:38:20 INFO  CrawlIndexer:100 - Indexing Document: 24
+2015-02-22 17:38:20 INFO  CrawlIndexer:100 - Indexing Document: 25
+2015-02-22 17:38:20 INFO  CrawlIndexer:100 - Indexing Document: 26
+2015-02-22 17:38:20 INFO  CrawlIndexer:100 - Indexing Document: 27
+2015-02-22 17:38:20 INFO  CrawlIndexer:100 - Indexing Document: 28
+2015-02-22 17:38:20 INFO  CrawlIndexer:100 - Indexing Document: 29
+2015-02-22 17:38:20 INFO  CrawlIndexer:100 - Indexing Document: 30
+2015-02-22 17:38:20 INFO  CrawlIndexer:100 - Indexing Document: 31
+2015-02-22 17:38:20 INFO  CrawlIndexer:100 - Indexing Document: 32
+2015-02-22 17:38:20 INFO  CrawlIndexer:100 - Indexing Document: 33
+2015-02-22 17:38:20 INFO  CrawlIndexer:100 - Indexing Document: 34
+2015-02-22 17:38:20 INFO  CrawlIndexer:100 - Indexing Document: 35
+2015-02-22 17:38:20 INFO  CrawlIndexer:100 - Indexing Document: 36
+2015-02-22 17:38:20 INFO  CrawlIndexer:100 - Indexing Document: 37
+2015-02-22 17:38:20 INFO  CrawlIndexer:100 - Indexing Document: 38
+2015-02-22 17:38:20 INFO  CrawlIndexer:100 - Indexing Document: 39
+2015-02-22 17:38:20 INFO  CrawlIndexer:100 - Indexing Document: 40
+2015-02-22 17:38:20 INFO  CrawlIndexer:100 - Indexing Document: 41
+2015-02-22 17:38:20 INFO  CrawlIndexer:100 - Indexing Document: 42
+2015-02-22 17:38:20 INFO  CrawlIndexer:100 - Indexing Document: 43
+2015-02-22 17:38:20 INFO  CrawlIndexer:100 - Indexing Document: 44
+2015-02-22 17:38:20 INFO  CrawlIndexer:100 - Indexing Document: 45
+2015-02-22 17:38:20 INFO  CrawlIndexer:100 - Indexing Document: 46
+2015-02-22 17:38:20 INFO  CrawlIndexer:100 - Indexing Document: 47
+2015-02-22 17:38:20 INFO  CrawlIndexer:100 - Indexing Document: 48
+2015-02-22 17:38:20 INFO  CrawlIndexer:100 - Indexing Document: 49
+2015-02-22 17:38:20 INFO  CrawlIndexer:100 - Indexing Document: 50
+2015-02-22 17:38:20 INFO  CrawlIndexer:100 - Indexing Document: 51
+2015-02-22 17:38:20 INFO  CrawlIndexer:100 - Indexing Document: 52
+2015-02-22 17:38:20 INFO  CrawlIndexer:100 - Indexing Document: 53
+2015-02-22 17:38:20 INFO  CrawlIndexer:100 - Indexing Document: 54
+2015-02-22 17:38:20 INFO  CrawlIndexer:100 - Indexing Document: 55
+2015-02-22 17:38:20 INFO  CrawlIndexer:100 - Indexing Document: 56
+2015-02-22 17:38:20 INFO  CrawlIndexer:100 - Indexing Document: 57
+2015-02-22 17:38:20 INFO  CrawlIndexer:100 - Indexing Document: 58
+2015-02-22 17:38:20 INFO  CrawlIndexer:100 - Indexing Document: 59
+2015-02-22 17:38:20 INFO  CrawlIndexer:100 - Indexing Document: 60
+2015-02-22 17:38:20 INFO  CrawlIndexer:100 - Indexing Document: 61
+2015-02-22 17:38:20 INFO  CrawlIndexer:100 - Indexing Document: 62
+2015-02-22 17:38:20 INFO  CrawlIndexer:100 - Indexing Document: 63
+2015-02-22 17:38:20 INFO  CrawlIndexer:100 - Indexing Document: 64
+2015-02-22 17:38:20 INFO  CrawlIndexer:100 - Indexing Document: 65
+2015-02-22 17:38:20 INFO  CrawlIndexer:100 - Indexing Document: 66
+2015-02-22 17:38:20 INFO  CrawlIndexer:100 - Indexing Document: 67
+2015-02-22 17:38:20 INFO  CrawlIndexer:100 - Indexing Document: 68
+2015-02-22 17:38:20 INFO  CrawlIndexer:100 - Indexing Document: 69
+2015-02-22 17:38:20 INFO  CrawlIndexer:100 - Indexing Document: 70
+2015-02-22 17:38:20 INFO  CrawlIndexer:100 - Indexing Document: 71
+2015-02-22 17:38:20 INFO  CrawlIndexer:100 - Indexing Document: 72
+2015-02-22 17:38:20 INFO  CrawlIndexer:100 - Indexing Document: 73
+2015-02-22 17:38:20 INFO  CrawlIndexer:100 - Indexing Document: 74
+2015-02-22 17:38:20 INFO  CrawlIndexer:100 - Indexing Document: 75
+2015-02-22 17:38:20 INFO  CrawlIndexer:100 - Indexing Document: 76
+2015-02-22 17:38:20 INFO  CrawlIndexer:100 - Indexing Document: 77
+2015-02-22 17:38:20 INFO  CrawlIndexer:100 - Indexing Document: 78
+2015-02-22 17:38:20 INFO  CrawlIndexer:191 - Done ...
+2015-02-22 17:38:20 INFO  Controller:80 - All Done Goodbye!
+2015-02-22 22:46:28 INFO  Controller:56 - Web Crawler Controller Started
+2015-02-22 22:46:29 INFO  CrawlController:108 - Deleted contents of: /Users/bensweett/data/crawl/root/frontier ( as you have configured resumable crawling to false )
+2015-02-22 22:46:30 INFO  CrawlController:165 - Crawler 1 started
+2015-02-22 22:47:10 INFO  CrawlController:201 - It looks like no thread is working, waiting for 10 seconds to make sure...
+2015-02-22 22:47:20 INFO  CrawlController:217 - No thread is working and no more URLs are in queue waiting for another 10 seconds to make sure...
+2015-02-22 22:47:30 INFO  CrawlController:225 - All of the crawlers are stopped. Finishing the process...
+2015-02-22 22:47:30 INFO  Crawler:80 - Crawl Thread Complete
+2015-02-22 22:47:30 INFO  CrawlController:233 - Waiting for 10 seconds before final clean up...
+2015-02-22 22:47:40 INFO  Controller:71 - Done crawling
+2015-02-22 22:47:40 INFO  CrawlIndexer:51 - Pooling crawler data
+2015-02-22 22:47:40 INFO  CrawlIndexer:178 - Total Documents with Image Alts: 68
+2015-02-22 22:47:40 INFO  CrawlIndexer:179 - Total Documents with Metadata: 11
+2015-02-22 22:47:40 INFO  CrawlIndexer:180 - Indexing Documents with Alts and Metadata ...
+2015-02-22 22:47:41 INFO  CrawlIndexer:100 - Indexing Document: 0
+2015-02-22 22:47:41 INFO  CrawlIndexer:100 - Indexing Document: 1
+2015-02-22 22:47:41 INFO  CrawlIndexer:100 - Indexing Document: 2
+2015-02-22 22:47:41 INFO  CrawlIndexer:100 - Indexing Document: 3
+2015-02-22 22:47:41 INFO  CrawlIndexer:100 - Indexing Document: 4
+2015-02-22 22:47:41 INFO  CrawlIndexer:100 - Indexing Document: 5
+2015-02-22 22:47:41 INFO  CrawlIndexer:100 - Indexing Document: 6
+2015-02-22 22:47:41 INFO  CrawlIndexer:100 - Indexing Document: 7
+2015-02-22 22:47:41 INFO  CrawlIndexer:100 - Indexing Document: 8
+2015-02-22 22:47:41 INFO  CrawlIndexer:100 - Indexing Document: 9
+2015-02-22 22:47:41 INFO  CrawlIndexer:100 - Indexing Document: 10
+2015-02-22 22:47:41 INFO  CrawlIndexer:100 - Indexing Document: 11
+2015-02-22 22:47:41 INFO  CrawlIndexer:100 - Indexing Document: 12
+2015-02-22 22:47:41 INFO  CrawlIndexer:100 - Indexing Document: 13
+2015-02-22 22:47:41 INFO  CrawlIndexer:100 - Indexing Document: 14
+2015-02-22 22:47:41 INFO  CrawlIndexer:100 - Indexing Document: 15
+2015-02-22 22:47:41 INFO  CrawlIndexer:100 - Indexing Document: 16
+2015-02-22 22:47:41 INFO  CrawlIndexer:100 - Indexing Document: 17
+2015-02-22 22:47:41 INFO  CrawlIndexer:100 - Indexing Document: 18
+2015-02-22 22:47:41 INFO  CrawlIndexer:100 - Indexing Document: 19
+2015-02-22 22:47:41 INFO  CrawlIndexer:100 - Indexing Document: 20
+2015-02-22 22:47:41 INFO  CrawlIndexer:100 - Indexing Document: 21
+2015-02-22 22:47:41 INFO  CrawlIndexer:100 - Indexing Document: 22
+2015-02-22 22:47:41 INFO  CrawlIndexer:100 - Indexing Document: 23
+2015-02-22 22:47:41 INFO  CrawlIndexer:100 - Indexing Document: 24
+2015-02-22 22:47:41 INFO  CrawlIndexer:100 - Indexing Document: 25
+2015-02-22 22:47:41 INFO  CrawlIndexer:100 - Indexing Document: 26
+2015-02-22 22:47:41 INFO  CrawlIndexer:100 - Indexing Document: 27
+2015-02-22 22:47:41 INFO  CrawlIndexer:100 - Indexing Document: 28
+2015-02-22 22:47:41 INFO  CrawlIndexer:100 - Indexing Document: 29
+2015-02-22 22:47:41 INFO  CrawlIndexer:100 - Indexing Document: 30
+2015-02-22 22:47:41 INFO  CrawlIndexer:100 - Indexing Document: 31
+2015-02-22 22:47:41 INFO  CrawlIndexer:100 - Indexing Document: 32
+2015-02-22 22:47:41 INFO  CrawlIndexer:100 - Indexing Document: 33
+2015-02-22 22:47:41 INFO  CrawlIndexer:100 - Indexing Document: 34
+2015-02-22 22:47:41 INFO  CrawlIndexer:100 - Indexing Document: 35
+2015-02-22 22:47:41 INFO  CrawlIndexer:100 - Indexing Document: 36
+2015-02-22 22:47:41 INFO  CrawlIndexer:100 - Indexing Document: 37
+2015-02-22 22:47:41 INFO  CrawlIndexer:100 - Indexing Document: 38
+2015-02-22 22:47:41 INFO  CrawlIndexer:100 - Indexing Document: 39
+2015-02-22 22:47:41 INFO  CrawlIndexer:100 - Indexing Document: 40
+2015-02-22 22:47:41 INFO  CrawlIndexer:100 - Indexing Document: 41
+2015-02-22 22:47:41 INFO  CrawlIndexer:100 - Indexing Document: 42
+2015-02-22 22:47:41 INFO  CrawlIndexer:100 - Indexing Document: 43
+2015-02-22 22:47:41 INFO  CrawlIndexer:100 - Indexing Document: 44
+2015-02-22 22:47:41 INFO  CrawlIndexer:100 - Indexing Document: 45
+2015-02-22 22:47:41 INFO  CrawlIndexer:100 - Indexing Document: 46
+2015-02-22 22:47:41 INFO  CrawlIndexer:100 - Indexing Document: 47
+2015-02-22 22:47:41 INFO  CrawlIndexer:100 - Indexing Document: 48
+2015-02-22 22:47:41 INFO  CrawlIndexer:100 - Indexing Document: 49
+2015-02-22 22:47:41 INFO  CrawlIndexer:100 - Indexing Document: 50
+2015-02-22 22:47:41 INFO  CrawlIndexer:100 - Indexing Document: 51
+2015-02-22 22:47:41 INFO  CrawlIndexer:100 - Indexing Document: 52
+2015-02-22 22:47:41 INFO  CrawlIndexer:100 - Indexing Document: 53
+2015-02-22 22:47:41 INFO  CrawlIndexer:100 - Indexing Document: 54
+2015-02-22 22:47:41 INFO  CrawlIndexer:100 - Indexing Document: 55
+2015-02-22 22:47:41 INFO  CrawlIndexer:100 - Indexing Document: 56
+2015-02-22 22:47:41 INFO  CrawlIndexer:100 - Indexing Document: 57
+2015-02-22 22:47:41 INFO  CrawlIndexer:100 - Indexing Document: 58
+2015-02-22 22:47:41 INFO  CrawlIndexer:100 - Indexing Document: 59
+2015-02-22 22:47:41 INFO  CrawlIndexer:100 - Indexing Document: 60
+2015-02-22 22:47:41 INFO  CrawlIndexer:100 - Indexing Document: 61
+2015-02-22 22:47:41 INFO  CrawlIndexer:100 - Indexing Document: 62
+2015-02-22 22:47:41 INFO  CrawlIndexer:100 - Indexing Document: 63
+2015-02-22 22:47:41 INFO  CrawlIndexer:100 - Indexing Document: 64
+2015-02-22 22:47:41 INFO  CrawlIndexer:100 - Indexing Document: 65
+2015-02-22 22:47:41 INFO  CrawlIndexer:100 - Indexing Document: 66
+2015-02-22 22:47:41 INFO  CrawlIndexer:100 - Indexing Document: 67
+2015-02-22 22:47:41 INFO  CrawlIndexer:100 - Indexing Document: 68
+2015-02-22 22:47:41 INFO  CrawlIndexer:100 - Indexing Document: 69
+2015-02-22 22:47:41 INFO  CrawlIndexer:100 - Indexing Document: 70
+2015-02-22 22:47:41 INFO  CrawlIndexer:100 - Indexing Document: 71
+2015-02-22 22:47:41 INFO  CrawlIndexer:100 - Indexing Document: 72
+2015-02-22 22:47:41 INFO  CrawlIndexer:100 - Indexing Document: 73
+2015-02-22 22:47:41 INFO  CrawlIndexer:100 - Indexing Document: 74
+2015-02-22 22:47:41 INFO  CrawlIndexer:100 - Indexing Document: 75
+2015-02-22 22:47:41 INFO  CrawlIndexer:100 - Indexing Document: 76
+2015-02-22 22:47:41 INFO  CrawlIndexer:100 - Indexing Document: 77
+2015-02-22 22:47:41 INFO  CrawlIndexer:100 - Indexing Document: 78
+2015-02-22 22:47:41 INFO  CrawlIndexer:191 - Done ...
+2015-02-22 22:47:41 INFO  Controller:80 - All Done Goodbye!
+2015-02-22 22:53:48 INFO  Controller:56 - Web Crawler Controller Started
+2015-02-22 22:53:48 INFO  CrawlController:108 - Deleted contents of: /Users/bensweett/data/crawl/root/frontier ( as you have configured resumable crawling to false )
+2015-02-22 22:53:50 INFO  CrawlController:165 - Crawler 1 started
+2015-02-22 22:54:40 INFO  CrawlController:201 - It looks like no thread is working, waiting for 10 seconds to make sure...
+2015-02-22 22:54:50 INFO  CrawlController:217 - No thread is working and no more URLs are in queue waiting for another 10 seconds to make sure...
+2015-02-22 22:55:00 INFO  CrawlController:225 - All of the crawlers are stopped. Finishing the process...
+2015-02-22 22:55:00 INFO  Crawler:80 - Crawl Thread Complete
+2015-02-22 22:55:00 INFO  CrawlController:233 - Waiting for 10 seconds before final clean up...
+2015-02-22 22:55:10 INFO  Controller:71 - Done crawling
+2015-02-22 22:55:10 INFO  CrawlIndexer:51 - Pooling crawler data
+2015-02-22 22:55:10 INFO  CrawlIndexer:178 - Total Documents with Image Alts: 68
+2015-02-22 22:55:10 INFO  CrawlIndexer:179 - Total Documents with Metadata: 11
+2015-02-22 22:55:10 INFO  CrawlIndexer:180 - Indexing Documents with Alts and Metadata ...
+2015-02-22 22:55:10 INFO  CrawlIndexer:100 - Indexing Document: 0
+2015-02-22 22:55:10 INFO  CrawlIndexer:100 - Indexing Document: 1
+2015-02-22 22:55:10 INFO  CrawlIndexer:100 - Indexing Document: 2
+2015-02-22 22:55:10 INFO  CrawlIndexer:100 - Indexing Document: 3
+2015-02-22 22:55:10 INFO  CrawlIndexer:100 - Indexing Document: 4
+2015-02-22 22:55:10 INFO  CrawlIndexer:100 - Indexing Document: 5
+2015-02-22 22:55:10 INFO  CrawlIndexer:100 - Indexing Document: 6
+2015-02-22 22:55:10 INFO  CrawlIndexer:100 - Indexing Document: 7
+2015-02-22 22:55:10 INFO  CrawlIndexer:100 - Indexing Document: 8
+2015-02-22 22:55:10 INFO  CrawlIndexer:100 - Indexing Document: 9
+2015-02-22 22:55:10 INFO  CrawlIndexer:100 - Indexing Document: 10
+2015-02-22 22:55:10 INFO  CrawlIndexer:100 - Indexing Document: 11
+2015-02-22 22:55:10 INFO  CrawlIndexer:100 - Indexing Document: 12
+2015-02-22 22:55:10 INFO  CrawlIndexer:100 - Indexing Document: 13
+2015-02-22 22:55:10 INFO  CrawlIndexer:100 - Indexing Document: 14
+2015-02-22 22:55:10 INFO  CrawlIndexer:100 - Indexing Document: 15
+2015-02-22 22:55:10 INFO  CrawlIndexer:100 - Indexing Document: 16
+2015-02-22 22:55:10 INFO  CrawlIndexer:100 - Indexing Document: 17
+2015-02-22 22:55:10 INFO  CrawlIndexer:100 - Indexing Document: 18
+2015-02-22 22:55:10 INFO  CrawlIndexer:100 - Indexing Document: 19
+2015-02-22 22:55:10 INFO  CrawlIndexer:100 - Indexing Document: 20
+2015-02-22 22:55:10 INFO  CrawlIndexer:100 - Indexing Document: 21
+2015-02-22 22:55:10 INFO  CrawlIndexer:100 - Indexing Document: 22
+2015-02-22 22:55:10 INFO  CrawlIndexer:100 - Indexing Document: 23
+2015-02-22 22:55:10 INFO  CrawlIndexer:100 - Indexing Document: 24
+2015-02-22 22:55:10 INFO  CrawlIndexer:100 - Indexing Document: 25
+2015-02-22 22:55:10 INFO  CrawlIndexer:100 - Indexing Document: 26
+2015-02-22 22:55:10 INFO  CrawlIndexer:100 - Indexing Document: 27
+2015-02-22 22:55:10 INFO  CrawlIndexer:100 - Indexing Document: 28
+2015-02-22 22:55:10 INFO  CrawlIndexer:100 - Indexing Document: 29
+2015-02-22 22:55:10 INFO  CrawlIndexer:100 - Indexing Document: 30
+2015-02-22 22:55:10 INFO  CrawlIndexer:100 - Indexing Document: 31
+2015-02-22 22:55:10 INFO  CrawlIndexer:100 - Indexing Document: 32
+2015-02-22 22:55:10 INFO  CrawlIndexer:100 - Indexing Document: 33
+2015-02-22 22:55:10 INFO  CrawlIndexer:100 - Indexing Document: 34
+2015-02-22 22:55:10 INFO  CrawlIndexer:100 - Indexing Document: 35
+2015-02-22 22:55:10 INFO  CrawlIndexer:100 - Indexing Document: 36
+2015-02-22 22:55:10 INFO  CrawlIndexer:100 - Indexing Document: 37
+2015-02-22 22:55:10 INFO  CrawlIndexer:100 - Indexing Document: 38
+2015-02-22 22:55:10 INFO  CrawlIndexer:100 - Indexing Document: 39
+2015-02-22 22:55:10 INFO  CrawlIndexer:100 - Indexing Document: 40
+2015-02-22 22:55:10 INFO  CrawlIndexer:100 - Indexing Document: 41
+2015-02-22 22:55:10 INFO  CrawlIndexer:100 - Indexing Document: 42
+2015-02-22 22:55:10 INFO  CrawlIndexer:100 - Indexing Document: 43
+2015-02-22 22:55:10 INFO  CrawlIndexer:100 - Indexing Document: 44
+2015-02-22 22:55:10 INFO  CrawlIndexer:100 - Indexing Document: 45
+2015-02-22 22:55:10 INFO  CrawlIndexer:100 - Indexing Document: 46
+2015-02-22 22:55:10 INFO  CrawlIndexer:100 - Indexing Document: 47
+2015-02-22 22:55:10 INFO  CrawlIndexer:100 - Indexing Document: 48
+2015-02-22 22:55:10 INFO  CrawlIndexer:100 - Indexing Document: 49
+2015-02-22 22:55:10 INFO  CrawlIndexer:100 - Indexing Document: 50
+2015-02-22 22:55:10 INFO  CrawlIndexer:100 - Indexing Document: 51
+2015-02-22 22:55:10 INFO  CrawlIndexer:100 - Indexing Document: 52
+2015-02-22 22:55:10 INFO  CrawlIndexer:100 - Indexing Document: 53
+2015-02-22 22:55:10 INFO  CrawlIndexer:100 - Indexing Document: 54
+2015-02-22 22:55:10 INFO  CrawlIndexer:100 - Indexing Document: 55
+2015-02-22 22:55:10 INFO  CrawlIndexer:100 - Indexing Document: 56
+2015-02-22 22:55:10 INFO  CrawlIndexer:100 - Indexing Document: 57
+2015-02-22 22:55:10 INFO  CrawlIndexer:100 - Indexing Document: 58
+2015-02-22 22:55:10 INFO  CrawlIndexer:100 - Indexing Document: 59
+2015-02-22 22:55:10 INFO  CrawlIndexer:100 - Indexing Document: 60
+2015-02-22 22:55:10 INFO  CrawlIndexer:100 - Indexing Document: 61
+2015-02-22 22:55:10 INFO  CrawlIndexer:100 - Indexing Document: 62
+2015-02-22 22:55:10 INFO  CrawlIndexer:100 - Indexing Document: 63
+2015-02-22 22:55:10 INFO  CrawlIndexer:100 - Indexing Document: 64
+2015-02-22 22:55:10 INFO  CrawlIndexer:100 - Indexing Document: 65
+2015-02-22 22:55:10 INFO  CrawlIndexer:100 - Indexing Document: 66
+2015-02-22 22:55:10 INFO  CrawlIndexer:100 - Indexing Document: 67
+2015-02-22 22:55:10 INFO  CrawlIndexer:100 - Indexing Document: 68
+2015-02-22 22:55:10 INFO  CrawlIndexer:100 - Indexing Document: 69
+2015-02-22 22:55:10 INFO  CrawlIndexer:100 - Indexing Document: 70
+2015-02-22 22:55:10 INFO  CrawlIndexer:100 - Indexing Document: 71
+2015-02-22 22:55:10 INFO  CrawlIndexer:100 - Indexing Document: 72
+2015-02-22 22:55:10 INFO  CrawlIndexer:100 - Indexing Document: 73
+2015-02-22 22:55:10 INFO  CrawlIndexer:100 - Indexing Document: 74
+2015-02-22 22:55:10 INFO  CrawlIndexer:100 - Indexing Document: 75
+2015-02-22 22:55:10 INFO  CrawlIndexer:100 - Indexing Document: 76
+2015-02-22 22:55:10 INFO  CrawlIndexer:100 - Indexing Document: 77
+2015-02-22 22:55:10 INFO  CrawlIndexer:100 - Indexing Document: 78
+2015-02-22 22:55:10 INFO  CrawlIndexer:191 - Done ...
+2015-02-22 22:55:11 INFO  Controller:80 - All Done Goodbye!
