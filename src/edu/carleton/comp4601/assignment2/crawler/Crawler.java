@@ -194,7 +194,7 @@ public class Crawler extends WebCrawler {
 			HtmlParseData htmlParseData = (HtmlParseData) page.getParseData();
 			String html = htmlParseData.getHtml();
 			int docId = page.getWebURL().getDocid();
-
+			System.out.println("Current doc id is: " + docId);
 			Document doc = Jsoup.parse(html);
 			Elements allImages = doc.select("img[src~=(?i)\\.(png|jpe?g|gif)]");
 			Elements allText = doc.select("p,h1,h2,h3,h4,h5");
@@ -269,6 +269,7 @@ public class Crawler extends WebCrawler {
 
 		PageVertex newPage = new PageVertex(docId, url, time);
 		this.crawlGraph.addVertex(newPage);
+		System.out.println("Current vertex id is: " + docId + " and there are this many vertices: " + this.crawlGraph.idCounter);
 
 		if(parentUrl != null) {
 			PageVertex parentPage = new PageVertex(parentId, parentUrl, time);

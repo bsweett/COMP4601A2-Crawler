@@ -15,7 +15,7 @@ public class Grapher implements Serializable {
 	private DefaultDirectedGraph<PageVertex, DefaultEdge> graph;
 	private ConcurrentHashMap<Integer, PageVertex> vertices;
 	private String name;
-	private int idCounter;
+	public int idCounter;
 	
 	public Grapher(String name) {
 		this.name = name;
